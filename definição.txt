@@ -1,0 +1,13 @@
+Para o projeto, usaremos uma empresa fictícia de manufatura aonde a mesma conterá os seguintes dados para o DW:
+- Dados de Produção;
+- Dados de Vendas;
+- Dados de Fornecedores;
+- Dados Financeiros.
+Com os dados modelados no Banco, irei buscar a elaboração de alguns relatórios que seriam interessante para a empresa com finalidade de entender melhor o desempenho dos negócios,
+a eficiência da produção e as necessidades do mercado:
+- Relatório de vendas;
+- Relatórios de estoque;
+- Relatórios de produção;
+- Relatórios de manutenção;
+- Relatórios  financeiros;
+- Relatórios  de  qualidade.
