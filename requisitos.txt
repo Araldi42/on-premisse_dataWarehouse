@@ -1,0 +1,7 @@
+RF01 - Categoria de Produto: Todos os produtos pertencem a uma única categoria, que deve estar representada em cada um dos 
+relatórios.
+RF02 - Localidade: Todas as vendas são realizadas em lojas, que possuem um código e estão em uma cidade. Atualmente a 
+empresa tem apenas uma loja por cidade, mas isso poderá mudar com a expansão e o sistema deve prever 
+esta mudança.
+RF03 - Funcionários: Os funcionários responsáveis pelas vendas recebem comissão e no futuro a empresa terá que mapear as 
+comissões por categoria de produto, mas esse não é um requerimento obrigatório neste momento.
