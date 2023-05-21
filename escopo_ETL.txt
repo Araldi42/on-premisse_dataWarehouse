@@ -11,3 +11,7 @@ Algumas vantagens da arquitetura proposta:
 - Evitar sobrecarga de processamento no servidor fonte de dados.
 - O ETL será assíncrono, o que significa que as etapas podem ser executadas em momentos diferentes.
 - A Stagin Area centraliza as tarefas de limpeza, transformação e organização de dados simplificando o processo e permitindo auditoria.
+
+Possíveis desvantagens da arquitetura proposta:
+- Pode haver sobrecarga na perfomance do DW dependendo do horário em que as transformações forem realizadas na Stagin Area.
+- Pode haver um gap entre a extração de dados da fonte e carga na Stagin Area para processamento.
