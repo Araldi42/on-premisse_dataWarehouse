@@ -6,3 +6,8 @@ Transformação e Carga de Dados via SQL:
 com uma query).
 Carregamento dos dados com SQL:
 - Aplicado a transformação dos dados na Stagin Area, os dados serão carregados para o nosso schema de DW via SQL com os dados prontos para análises e relatórios.
+
+Algumas vantagens da arquitetura proposta:
+- Evitar sobrecarga de processamento no servidor fonte de dados.
+- O ETL será assíncrono, o que significa que as etapas podem ser executadas em momentos diferentes.
+- A Stagin Area centraliza as tarefas de limpeza, transformação e organização de dados simplificando o processo e permitindo auditoria.
