@@ -1,0 +1,8 @@
+Extração de dados com Airbyte:
+- Os dados serão levados do servidor Fonte de Dado para o servdor Stagin Area. Aqui não haverá filtro ou transformação e os dados brutos das tabelas correspondentes
+serão levados para a Stagin Area. O objetivo é gerar a menor sobrecarga possível no servidor de origem dos dados.
+Transformação e Carga de Dados via SQL:
+- Na Stagin Area os dados serão limpos, transformados e processados com Linguagem SQL. A linguagem SQL será usada para carregar os dados no DW(o que pode ser feito
+com uma query).
+Carregamento dos dados com SQL:
+- Aplicado a transformação dos dados na Stagin Area, os dados serão carregados para o nosso schema de DW via SQL com os dados prontos para análises e relatórios.
