@@ -1,6 +1,6 @@
 # Carrega a tabela fato_vendas
 
-INSERT INTO schema3.fato_vendas (sk_produto, 
+INSERT INTO DW.fato_vendas (sk_produto, 
 	                            sk_cliente, 
 	                            sk_localidade, 
 	                            sk_tempo, 
@@ -16,14 +16,14 @@ SELECT sk_produto,
        SUM(preco_venda) AS preco_venda, 
 	  SUM(custo_produto) AS custo_produto, 
 	  SUM(ROUND((CAST(quantidade AS numeric) * CAST(preco_venda AS numeric)), 2)) AS receita_vendas
-FROM schema2.st_ft_vendas tb1, 
-     schema2.st_ft_clientes tb2, 
-	schema2.st_ft_localidades tb3, 
-	schema2.st_ft_produtos tb4,
-	schema3.dim_tempo tb5,
-	schema3.dim_produto tb6,
-	schema3.dim_localidade tb7,
-	schema3.dim_cliente tb8
+FROM staginarea.st_ft_vendas tb1, 
+     staginarea.st_ft_clientes tb2, 
+	staginarea.st_ft_localidades tb3, 
+	staginarea.st_ft_produtos tb4,
+	DW.dim_tempo tb5,
+	DW.dim_produto tb6,
+	DW.dim_localidade tb7,
+	DW.dim_cliente tb8
 WHERE tb2.id_cliente = tb1.id_cliente
 AND tb3.id_localidade = tb1.id_localizacao
 AND tb4.id_produto = tb1.id_produto
